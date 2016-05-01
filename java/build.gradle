@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'signing'
 
 sourceCompatibility = 1.7
-archivesBaseName    = "textsecure-java"
+archivesBaseName    = "signal-service-java"
 version             = version_number
 group               = group_info
 
@@ -17,7 +17,7 @@ dependencies {
     compile 'com.googlecode.libphonenumber:libphonenumber:7.1.0'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.5.0'
 
-    compile "org.whispersystems:axolotl-java:${axolotl_version}"
+    compile "org.whispersystems:signal-protocol-java:${signal_version}"
     compile 'com.squareup.okhttp:okhttp:2.2.0'
     compile 'org.apache.httpcomponents:httpclient:4.4'
 
